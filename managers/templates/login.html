@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-4"></div>
+        <div class="col-4">
+            <h1>Login</h1>
+            <div class="border border-primary">
+                <p>Register Here</p>
+                <form action=""method="post">
+                    {%csrf_token%}
+                    <div class="mb-3">
+                        <input type="text"placeholder="Username" class="form-control" name="u_name">
+                    </div>
+                    <div class="mb-3">
+                        <input type="text"placeholder="Password" class="form-control" name="p_name">
+                    </div>
+                    <input type="submit">
+                 </form>
+            </div>
+        </div>
+        <div class="col"></div>
+
+</body>
+</html>
